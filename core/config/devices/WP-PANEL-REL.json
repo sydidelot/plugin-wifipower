@@ -1,6 +1,6 @@
 {
     "WP-PANEL-REL": {
-        "name" : "WP-PANEL-REL",
+        "name": "WP-PANEL-REL",
         "commands": [
             {
                 "name": "On 1",
@@ -8,7 +8,11 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 1",
-                "logicalId": "R11"
+                "logicalId": "R11",
+                "template": {
+                    "dashboard": "prise",
+                    "mobile": "prise"
+                }
             },
             {
                 "name": "Off 1",
@@ -16,13 +20,17 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 1",
-                "logicalId": "R10"
+                "logicalId": "R10",
+                "template": {
+                    "dashboard": "prise",
+                    "mobile": "prise"
+                }
             },
             {
                 "name": "Etat 1",
                 "type": "info",
                 "subtype": "binary",
-                "isVisible": 1,
+                "isVisible": 0,
                 "eventOnly": 1,
                 "logicalId": "R1"
             },
@@ -32,7 +40,11 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 2",
-                "logicalId": "R21"
+                "logicalId": "R21",
+                "template": {
+                    "dashboard": "prise",
+                    "mobile": "prise"
+                }
             },
             {
                 "name": "Off 2",
@@ -40,13 +52,17 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 2",
-                "logicalId": "R20"
+                "logicalId": "R20",
+                "template": {
+                    "dashboard": "prise",
+                    "mobile": "prise"
+                }
             },
             {
                 "name": "Etat 2",
                 "type": "info",
                 "subtype": "binary",
-                "isVisible": 1,
+                "isVisible": 0,
                 "eventOnly": 1,
                 "logicalId": "R2"
             },
@@ -56,7 +72,11 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 3",
-                "logicalId": "R31"
+                "logicalId": "R31",
+                "template": {
+                    "dashboard": "prise",
+                    "mobile": "prise"
+                }
             },
             {
                 "name": "Off 3",
@@ -64,13 +84,17 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 3",
-                "logicalId": "R30"
+                "logicalId": "R30",
+                "template": {
+                    "dashboard": "prise",
+                    "mobile": "prise"
+                }
             },
             {
                 "name": "Etat 3",
                 "type": "info",
                 "subtype": "binary",
-                "isVisible": 1,
+                "isVisible": 0,
                 "eventOnly": 1,
                 "logicalId": "R3"
             },
@@ -80,7 +104,11 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 4",
-                "logicalId": "R41"
+                "logicalId": "R41",
+                "template": {
+                    "dashboard": "prise",
+                    "mobile": "prise"
+                }
             },
             {
                 "name": "Off 4",
@@ -88,13 +116,17 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 4",
-                "logicalId": "R40"
+                "logicalId": "R40",
+                "template": {
+                    "dashboard": "prise",
+                    "mobile": "prise"
+                }
             },
             {
                 "name": "Etat 4",
                 "type": "info",
                 "subtype": "binary",
-                "isVisible": 1,
+                "isVisible": 0,
                 "eventOnly": 1,
                 "logicalId": "R4"
             }
