@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info>
+    <id>wifipower</id>
+    <name>Wifipower</name>
+    <description>Plugin pour la gestion des équipements wifipower</description>
+    <icon>fa fa-bolt</icon>
+    <licence>AGPL</licence>
+    <author>Loïc Gevrey</author>
+    <installation>Aucune</installation>
+    <require>1.136</require>
+    <category>communication</category>
+</info>
+

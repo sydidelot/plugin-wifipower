@@ -1,0 +1,199 @@
+{
+    "WP-PANEL-SW8": {
+        "name" : "WP-PANEL-SW8",
+        "commands": [
+            {
+                "name": "On 1",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 1",
+                "logicalId": "R11"
+            },
+            {
+                "name": "Off 1",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 1",
+                "logicalId": "R10"
+            },
+            {
+                "name": "Etat 1",
+                "type": "info",
+                "subtype": "binary",
+                "isVisible": 1,
+                "eventOnly": 1,
+                "logicalId": "R1"
+            },
+            {
+                "name": "On 2",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 2",
+                "logicalId": "R21"
+            },
+            {
+                "name": "Off 2",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 2",
+                "logicalId": "R20"
+            },
+            {
+                "name": "Etat 2",
+                "type": "info",
+                "subtype": "binary",
+                "isVisible": 1,
+                "eventOnly": 1,
+                "logicalId": "R2"
+            },
+            {
+                "name": "On 3",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 3",
+                "logicalId": "R31"
+            },
+            {
+                "name": "Off 3",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 3",
+                "logicalId": "R30"
+            },
+            {
+                "name": "Etat 3",
+                "type": "info",
+                "subtype": "binary",
+                "isVisible": 1,
+                "eventOnly": 1,
+                "logicalId": "R3"
+            },
+            {
+                "name": "On 4",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 4",
+                "logicalId": "R41"
+            },
+            {
+                "name": "Off 4",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 4",
+                "logicalId": "R40"
+            },
+            {
+                "name": "Etat 4",
+                "type": "info",
+                "subtype": "binary",
+                "isVisible": 1,
+                "eventOnly": 1,
+                "logicalId": "R4"
+            },
+            {
+                "name": "On 5",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 5",
+                "logicalId": "R51"
+            },
+            {
+                "name": "Off 5",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 5",
+                "logicalId": "R50"
+            },
+            {
+                "name": "Etat 5",
+                "type": "info",
+                "subtype": "binary",
+                "isVisible": 1,
+                "eventOnly": 1,
+                "logicalId": "R5"
+            },
+            {
+                "name": "On 6",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 6",
+                "logicalId": "R61"
+            },
+            {
+                "name": "Off 6",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 6",
+                "logicalId": "R60"
+            },
+            {
+                "name": "Etat 6",
+                "type": "info",
+                "subtype": "binary",
+                "isVisible": 1,
+                "eventOnly": 1,
+                "logicalId": "R6"
+            },
+            {
+                "name": "On 7",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 7",
+                "logicalId": "R71"
+            },
+            {
+                "name": "Off 7",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 7",
+                "logicalId": "R70"
+            },
+            {
+                "name": "Etat 7",
+                "type": "info",
+                "subtype": "binary",
+                "isVisible": 1,
+                "eventOnly": 1,
+                "logicalId": "R7"
+            },
+            {
+                "name": "On 8",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 8",
+                "logicalId": "R81"
+            },
+            {
+                "name": "Off 8",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 8",
+                "logicalId": "R80"
+            },
+            {
+                "name": "Etat 8",
+                "type": "info",
+                "subtype": "binary",
+                "isVisible": 1,
+                "eventOnly": 1,
+                "logicalId": "R8"
+            }
+        ]
+    }
+}
