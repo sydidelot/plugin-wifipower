@@ -45,7 +45,7 @@ sendVarToJS('eqType', 'wifipower');
                 </div>
                 <div class="form-group">
                     <label class="col-sm-3 control-label">{{Catégorie}}</label>
-                    <div class="col-sm-3">
+                    <div class="col-sm-6">
                         <?php
                         foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
                             echo '<label class="checkbox-inline">';
@@ -60,7 +60,7 @@ sendVarToJS('eqType', 'wifipower');
                     <div class="col-sm-1">
                         <input type="checkbox" class="eqLogicAttr" data-l1key="isEnable" size="16" checked/>
                     </div>
-                    <label class="col-sm-3 control-label" >{{Visible}}</label>
+                    <label class="col-sm-2 control-label" >{{Visible}}</label>
                     <div class="col-sm-1">
                         <input type="checkbox" class="eqLogicAttr" data-l1key="isVisible" checked/>
                     </div>

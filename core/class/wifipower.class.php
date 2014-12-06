@@ -203,7 +203,8 @@ class wifipower extends eqLogic {
 
     public function updateState() {
         $request_http = new com_http($this->getUrl() . 'Q');
-        $xml = new SimpleXMLElement($request_http->exec());
+        $request_http->getCookiesession(true);
+        $xml = new SimpleXMLElement($request_http->exec(10, 2));
         $wifipower = json_decode(json_encode($xml), true);
         foreach ($wifipower['out'] as $relai => $state) {
             $cmd = $this->getCmd(null, $relai);
@@ -238,7 +239,8 @@ class wifipowerCmd extends cmd {
         $url = $eqLogic->getUrl();
         $url .= $this->getLogicalId();
         $request_http = new com_http($url);
-        $request_http->exec();
+        $request_http->getCookiesession(true);
+        $request_http->exec(10, 2);
         $eqLogic->updateState();
         $eqLogic->save();
     }
