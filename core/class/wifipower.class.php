@@ -193,7 +193,11 @@ class wifipower extends eqLogic {
         if ($this->getConfiguration('username') != '' && $this->getConfiguration('password') != '') {
             $url .= $this->getConfiguration('username') . ':' . $this->getConfiguration('password') . '@';
         }
-        $url .= $ip . ':' . $this->getConfiguration('port', 2000) . '/';
+        if ($this->getConfiguration('port', 2000) != 80) {
+            $url .= $ip . ':' . $this->getConfiguration('port', 2000) . '/';
+        } else {
+            $url .= $ip . '/';
+        }
         return $url;
     }
 
