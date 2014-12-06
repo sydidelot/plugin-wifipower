@@ -202,8 +202,7 @@ class wifipower extends eqLogic {
     }
 
     public function updateState() {
-        $url = $this->getUrl();
-        $request_http = new com_http($url . 'Q');
+        $request_http = new com_http($this->getUrl() . 'Q');
         $xml = new SimpleXMLElement($request_http->exec());
         $wifipower = json_decode(json_encode($xml), true);
         foreach ($wifipower['out'] as $relai => $state) {
