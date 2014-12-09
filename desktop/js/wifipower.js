@@ -55,13 +55,14 @@ function addCmdToTable(_cmd) {
     tr += '</td>';
     tr += '<td>';
     if (is_numeric(_cmd.id)) {
+        tr += '<a class="btn btn-default btn-xs cmdAction expertModeVisible" data-action="configure"><i class="fa fa-cogs"></i></a> ';
         tr += '<a class="btn btn-default btn-xs cmdAction" data-action="test"><i class="fa fa-rss"></i> Tester</a>';
     }
     tr += '<i class="fa fa-minus-circle pull-right cmdAction cursor" data-action="remove"></i></td>';
     tr += '</tr>';
     $('#table_cmd tbody').append(tr);
     var tr = $('#table_cmd tbody tr:last');
-     jeedom.eqLogic.builSelectCmd({
+    jeedom.eqLogic.builSelectCmd({
         id: $(".li_eqLogic.active").attr('data-eqLogic_id'),
         filter: {type: 'info'},
         error: function (error) {
@@ -73,5 +74,5 @@ function addCmdToTable(_cmd) {
             jeedom.cmd.changeType(tr, init(_cmd.subType));
         }
     });
-   
+
 }
