@@ -64,7 +64,7 @@ class wifipower extends eqLogic {
         return $return;
     }
 
-    public static function cron() {
+    public static function pull() {
         foreach (eqLogic::byType('wifipower') as $eqLogic) {
             if ($eqLogic->getIsActive() == 1) {
                 $eqLogic->updateState();

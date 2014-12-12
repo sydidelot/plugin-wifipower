@@ -1,0 +1,135 @@
+{
+    "WP-SITE-REL": {
+        "name": "WP-SITE-REL",
+        "commands": [
+            {
+                "name": "On 1",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 1",
+                "logicalId": "R11",
+                "template": {
+                    "dashboard": "prise",
+                    "mobile": "prise"
+                }
+            },
+            {
+                "name": "Off 1",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 1",
+                "logicalId": "R10",
+                "template": {
+                    "dashboard": "prise",
+                    "mobile": "prise"
+                }
+            },
+            {
+                "name": "Etat 1",
+                "type": "info",
+                "subtype": "binary",
+                "isVisible": 0,
+                "eventOnly": 1,
+                "logicalId": "R1"
+            },
+            {
+                "name": "On 2",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 2",
+                "logicalId": "R21",
+                "template": {
+                    "dashboard": "prise",
+                    "mobile": "prise"
+                }
+            },
+            {
+                "name": "Off 2",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 2",
+                "logicalId": "R20",
+                "template": {
+                    "dashboard": "prise",
+                    "mobile": "prise"
+                }
+            },
+            {
+                "name": "Etat 2",
+                "type": "info",
+                "subtype": "binary",
+                "isVisible": 0,
+                "eventOnly": 1,
+                "logicalId": "R2"
+            },
+            {
+                "name": "On 3",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 3",
+                "logicalId": "R31",
+                "template": {
+                    "dashboard": "prise",
+                    "mobile": "prise"
+                }
+            },
+            {
+                "name": "Off 3",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 3",
+                "logicalId": "R30",
+                "template": {
+                    "dashboard": "prise",
+                    "mobile": "prise"
+                }
+            },
+            {
+                "name": "Etat 3",
+                "type": "info",
+                "subtype": "binary",
+                "isVisible": 0,
+                "eventOnly": 1,
+                "logicalId": "R3"
+            },
+            {
+                "name": "On 4",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 4",
+                "logicalId": "R41",
+                "template": {
+                    "dashboard": "prise",
+                    "mobile": "prise"
+                }
+            },
+            {
+                "name": "Off 4",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "value": "Etat 4",
+                "logicalId": "R40",
+                "template": {
+                    "dashboard": "prise",
+                    "mobile": "prise"
+                }
+            },
+            {
+                "name": "Etat 4",
+                "type": "info",
+                "subtype": "binary",
+                "isVisible": 0,
+                "eventOnly": 1,
+                "logicalId": "R4"
+            }
+        ]
+    }
+}
