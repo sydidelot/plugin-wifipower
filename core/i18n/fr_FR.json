@@ -23,5 +23,9 @@
         "Options": "Options",
         "Supprimer": "Supprimer",
         "Sauvegarder": "Sauvegarder"
+    },
+    "plugins\/wifipower\/plugin_info\/info.xml": {
+        "Plugin pour la gestion des équipements wifipower": "Plugin pour la gestion des équipements wifipower",
+        "Aucune": "Aucune"
     }
 }
