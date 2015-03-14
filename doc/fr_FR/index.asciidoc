@@ -1,0 +1,16 @@
+== Wifipower
+
+=== Description
+Plugin pour la gestion des équipements wifipower
+
+'''
+=== Configuration
+include::configuration.asciidoc[]
+
+'''
+=== FAQ
+include::faq.asciidoc[]
+
+'''
+=== Changelog
+include::changelog.asciidoc[]
