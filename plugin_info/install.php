@@ -19,35 +19,35 @@
 require_once dirname(__FILE__) . '/../../../core/php/core.inc.php';
 
 function wifipower_install() {
-    $cron = cron::byClassAndFunction('wifipower', 'pull');
-    if (!is_object($cron)) {
-        $cron = new cron();
-        $cron->setClass('wifipower');
-        $cron->setFunction('pull');
-        $cron->setEnable(1);
-        $cron->setSchedule('*/2 * * * *');
-        $cron->save();
-    }
+	$cron = cron::byClassAndFunction('wifipower', 'pull');
+	if (!is_object($cron)) {
+		$cron = new cron();
+		$cron->setClass('wifipower');
+		$cron->setFunction('pull');
+		$cron->setEnable(1);
+		$cron->setSchedule('*/2 * * * *');
+		$cron->save();
+	}
 }
 
 function wifipower_update() {
-    $cron = cron::byClassAndFunction('wifipower', 'pull');
-    if (!is_object($cron)) {
-        $cron = new cron();
-        $cron->setClass('wifipower');
-        $cron->setFunction('pull');
-        $cron->setEnable(1);
-        $cron->setSchedule('*/2 * * * *');
-        $cron->save();
-    }
-    $cron->stop();
+	$cron = cron::byClassAndFunction('wifipower', 'pull');
+	if (!is_object($cron)) {
+		$cron = new cron();
+		$cron->setClass('wifipower');
+		$cron->setFunction('pull');
+		$cron->setEnable(1);
+		$cron->setSchedule('*/2 * * * *');
+		$cron->save();
+	}
+	$cron->stop();
 }
 
-function greenmomit_remove() {
-    $cron = cron::byClassAndFunction('wifipower', 'pull');
-    if (is_object($cron)) {
-        $cron->remove();
-    }
+function wifipower_remove() {
+	$cron = cron::byClassAndFunction('wifipower', 'pull');
+	if (is_object($cron)) {
+		$cron->remove();
+	}
 }
 
 ?>

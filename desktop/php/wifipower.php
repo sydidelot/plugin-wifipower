@@ -1,6 +1,6 @@
 <?php
 if (!isConnect('admin')) {
-    throw new Exception('{{401 - Accès non autorisé}}');
+	throw new Exception('{{401 - Accès non autorisé}}');
 }
 sendVarToJS('eqType', 'wifipower');
 $eqLogics = eqLogic::byType('wifipower');
@@ -13,37 +13,37 @@ $eqLogics = eqLogic::byType('wifipower');
                 <a class="btn btn-default eqLogicAction" style="width : 100%;margin-top : 5px;margin-bottom: 5px;" data-action="add"><i class="fa fa-plus-circle"></i> {{Ajouter un Wifipower}}</a>
                 <li class="filter" style="margin-bottom: 5px;"><input class="filter form-control input-sm" placeholder="{{Rechercher}}" style="width: 100%"/></li>
                 <?php
-                foreach ($eqLogics as $eqLogic) {
-                    echo '<li class="cursor li_eqLogic" data-eqLogic_id="' . $eqLogic->getId() . '"><a>' . $eqLogic->getHumanName(true) . '</a></li>';
-                }
-                ?>
+foreach ($eqLogics as $eqLogic) {
+	echo '<li class="cursor li_eqLogic" data-eqLogic_id="' . $eqLogic->getId() . '"><a>' . $eqLogic->getHumanName(true) . '</a></li>';
+}
+?>
             </ul>
         </div>
     </div>
-    
+
      <div class="col-lg-10 col-md-9 col-sm-8 eqLogicThumbnailDisplay" style="border-left: solid 1px #EEE; padding-left: 25px;">
         <legend>{{Mes wifipower}}
         </legend>
-        <?php
-        if (count($eqLogics) == 0) {
-            echo "<br/><br/><br/><center><span style='color:#767676;font-size:1.2em;font-weight: bold;'>{{Vous n'avez pas encore de wifipower, cliquez sur Ajouter un Wifipower pour commencer}}</span></center>";
-        } else {
-            ?>
             <div class="eqLogicThumbnailContainer">
-                <?php
-                foreach ($eqLogics as $eqLogic) {
-                    echo '<div class="eqLogicDisplayCard cursor" data-eqLogic_id="' . $eqLogic->getId() . '" style="background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;" >';
-                    echo "<center>";
-                    echo '<img src="plugins/wifipower/doc/images/wifipower_icon.png" height="105" width="95" />';
-                    echo "</center>";
-                    echo '<span style="font-size : 1.1em;position:relative; top : 15px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;"><center>' . $eqLogic->getHumanName(true, true) . '</center></span>';
-                    echo '</div>';
-                }
-                ?>
-            </div>
-        <?php } ?>
+                      <div class="cursor eqLogicAction" data-action="add" style="background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;" >
+           <center>
+            <i class="fa fa-plus-circle" style="font-size : 7em;color:#94ca02;"></i>
+        </center>
+        <span style="font-size : 1.1em;position:relative; top : 23px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;color:#94ca02"><center>Ajouter</center></span>
     </div>
-    
+                <?php
+foreach ($eqLogics as $eqLogic) {
+	echo '<div class="eqLogicDisplayCard cursor" data-eqLogic_id="' . $eqLogic->getId() . '" style="background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;" >';
+	echo "<center>";
+	echo '<img src="plugins/wifipower/doc/images/wifipower_icon.png" height="105" width="95" />';
+	echo "</center>";
+	echo '<span style="font-size : 1.1em;position:relative; top : 15px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;"><center>' . $eqLogic->getHumanName(true, true) . '</center></span>';
+	echo '</div>';
+}
+?>
+            </div>
+    </div>
+
     <div class="col-lg-10 col-md-9 col-sm-8 eqLogic" style="border-left: solid 1px #EEE; padding-left: 25px;display: none;">
         <form class="form-horizontal">
             <fieldset>
@@ -61,10 +61,10 @@ $eqLogics = eqLogic::byType('wifipower');
                         <select id="sel_object" class="eqLogicAttr form-control" data-l1key="object_id">
                             <option value="">{{Aucun}}</option>
                             <?php
-                            foreach (object::all() as $object) {
-                                echo '<option value="' . $object->getId() . '">' . $object->getName() . '</option>';
-                            }
-                            ?>
+foreach (object::all() as $object) {
+	echo '<option value="' . $object->getId() . '">' . $object->getName() . '</option>';
+}
+?>
                         </select>
                     </div>
                 </div>
@@ -72,12 +72,12 @@ $eqLogics = eqLogic::byType('wifipower');
                     <label class="col-sm-3 control-label">{{Catégorie}}</label>
                     <div class="col-sm-6">
                         <?php
-                        foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
-                            echo '<label class="checkbox-inline">';
-                            echo '<input type="checkbox" class="eqLogicAttr" data-l1key="category" data-l2key="' . $key . '" />' . $value['name'];
-                            echo '</label>';
-                        }
-                        ?>
+foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
+	echo '<label class="checkbox-inline">';
+	echo '<input type="checkbox" class="eqLogicAttr" data-l1key="category" data-l2key="' . $key . '" />' . $value['name'];
+	echo '</label>';
+}
+?>
                     </div>
                 </div>
                 <div class="form-group">
@@ -96,10 +96,10 @@ $eqLogics = eqLogic::byType('wifipower');
                         <select class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="device">
                             <option value="">{{Aucun}}</option>
                             <?php
-                            foreach (wifipower::devicesParameters() as $id => $info) {
-                                echo '<option value="' . $id . '">' . $info['name'] . '</option>';
-                            }
-                            ?>
+foreach (wifipower::devicesParameters() as $id => $info) {
+	echo '<option value="' . $id . '">' . $info['name'] . '</option>';
+}
+?>
                         </select>
                     </div>
 
@@ -128,7 +128,7 @@ $eqLogics = eqLogic::byType('wifipower');
                         <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="port" />
                     </div>
                 </div>
-            </fieldset> 
+            </fieldset>
         </form>
 
         <legend>{{Commande}}</legend>
@@ -158,5 +158,5 @@ $eqLogics = eqLogic::byType('wifipower');
     </div>
 </div>
 
-<?php include_file('desktop', 'wifipower', 'js', 'wifipower'); ?>
-<?php include_file('core', 'plugin.template', 'js'); ?>
+<?php include_file('desktop', 'wifipower', 'js', 'wifipower');?>
+<?php include_file('core', 'plugin.template', 'js');?>
