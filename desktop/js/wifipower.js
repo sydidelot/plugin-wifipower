@@ -15,12 +15,19 @@
  * along with Jeedom. If not, see <http://www.gnu.org/licenses/>.
  */
 
+ $('.eqLogicAttr[data-l1key=configuration][data-l2key=device]').on('change', function () {
+    if($(this).value() == ''){
+       $('#img_device').attr("src", 'plugins/wifipower/doc/images/wifipower_icon.png');
+   }else{
+       $('#img_device').attr("src", 'plugins/wifipower/core/config/devices/'+$(this).value()+'.jpg');
+   }
+});
 
 
 /*
  * Fonction pour l'ajout de commande, appellé automatiquement par plugin.template
  */
-function addCmdToTable(_cmd) {
+ function addCmdToTable(_cmd) {
     if (!isset(_cmd)) {
         var _cmd = {configuration: {}};
     }

@@ -1,7 +1,8 @@
 {
-    "WP-PANEL-SW8": {
-        "name": "WP-PANEL-SW8",
+    "ETH-IO32": {
+        "name": "ETH-IO32",
         "configuration" : {
+            "complement" : "API",
             "port" : "2000",
         },
         "commands": [
@@ -11,7 +12,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 1",
-                "logicalId": "R11",
+                "logicalId": "SET_DO1=1",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -23,7 +24,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 1",
-                "logicalId": "R10",
+                "logicalId": "SET_DO1=0",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -43,7 +44,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 2",
-                "logicalId": "R21",
+                "logicalId": "SET_DO2=1",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -55,7 +56,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 2",
-                "logicalId": "R20",
+                "logicalId": "SET_DO2=0",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -75,7 +76,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 3",
-                "logicalId": "R31",
+                "logicalId": "SET_DO3=1",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -87,7 +88,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 3",
-                "logicalId": "R30",
+                "logicalId": "SET_DO3=0",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -107,7 +108,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 4",
-                "logicalId": "R41",
+                "logicalId": "SET_DO4=1",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -119,7 +120,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 4",
-                "logicalId": "R40",
+                "logicalId": "SET_DO4=0",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -139,7 +140,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 5",
-                "logicalId": "R51",
+                "logicalId": "SET_DO5=1",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -151,7 +152,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 5",
-                "logicalId": "R50",
+                "logicalId": "SET_DO5=0",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -171,7 +172,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 6",
-                "logicalId": "R61",
+                "logicalId": "SET_DO6=1",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -183,7 +184,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 6",
-                "logicalId": "R60",
+                "logicalId": "SET_DO6=0",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -203,7 +204,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 7",
-                "logicalId": "R71",
+                "logicalId": "SET_DO7=1",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -215,7 +216,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 7",
-                "logicalId": "R70",
+                "logicalId": "SET_DO7=0",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -235,7 +236,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 8",
-                "logicalId": "R81",
+                "logicalId": "SET_DO8=1",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -247,7 +248,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Etat 8",
-                "logicalId": "R80",
+                "logicalId": "SET_DO8=0",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"

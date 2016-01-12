@@ -1,6 +1,9 @@
 {
     "WP-SITE-REL": {
         "name": "WP-SITE-REL",
+        "configuration" : {
+            "port" : "2000",
+        },
         "commands": [
             {
                 "name": "On 1",

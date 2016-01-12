@@ -64,11 +64,8 @@ class wifipower extends eqLogic {
 	}
 
 	public static function pull() {
-		foreach (eqLogic::byType('wifipower') as $eqLogic) {
-			if ($eqLogic->getIsEnable() == 1) {
-				$eqLogic->updateState();
-				$eqLogic->save();
-			}
+		foreach (eqLogic::byType('wifipower', true) as $eqLogic) {
+			$eqLogic->updateState();
 		}
 	}
 
@@ -95,6 +92,7 @@ class wifipower extends eqLogic {
 		if ($this->getConfiguration('device') != $this->getConfiguration('applyDevice')) {
 			$this->applyModuleConfiguration();
 		}
+		$this->updateState();
 	}
 
 	public function applyModuleConfiguration() {
@@ -118,12 +116,10 @@ class wifipower extends eqLogic {
 				$this->setCategory($key, $value);
 			}
 		}
-
 		$cmd_order = 0;
 		$link_cmds = array();
 		$link_actions = array();
 		if (isset($device['commands'])) {
-
 			foreach ($device['commands'] as $command) {
 				$cmd = null;
 				foreach ($this->getCmd() as $liste_cmd) {
@@ -141,9 +137,7 @@ class wifipower extends eqLogic {
 						$command['name'] = $cmd->getName();
 					}
 					utils::a2o($cmd, $command);
-
 					$cmd->save();
-
 					if (isset($command['value'])) {
 						$link_cmds[$cmd->getId()] = $command['value'];
 					}
@@ -197,16 +191,19 @@ class wifipower extends eqLogic {
 		} else {
 			$url .= $ip . '/';
 		}
+		if ($this->getConfiguration('complement') != '') {
+			$url .= $this->getConfiguration('complement') . '/';
+		}
 		return $url;
 	}
 
-	public function updateState($_xml = null) {
-		if ($_xml == null) {
+	public function updateState() {
+		try {
 			$request_http = new com_http($this->getUrl() . 'Q');
-			$xml = new SimpleXMLElement($request_http->exec(10, 2));
-		} else {
-			$xml = new SimpleXMLElement($_xml);
+		} catch (Exception $e) {
+			return;
 		}
+		$xml = new SimpleXMLElement($request_http->exec(10, 2));
 		$wifipower = json_decode(json_encode($xml), true);
 		foreach ($wifipower['out'] as $relai => $state) {
 			$cmd = $this->getCmd(null, $relai);
@@ -217,8 +214,10 @@ class wifipower extends eqLogic {
 				}
 			}
 		}
-		$this->setConfiguration('type', $wifipower['device']['type']);
-		$this->setConfiguration('XMLversion', $wifipower['device']['XMLversion']);
+		if ($this->getConfiguration('type') != $wifipower['device']['type']) {
+			$this->setConfiguration('type', $wifipower['device']['type']);
+			$this->save();
+		}
 	}
 
 	/*     * **********************Getteur Setteur*************************** */
@@ -240,8 +239,7 @@ class wifipowerCmd extends cmd {
 		$url .= $this->getLogicalId();
 		$request_http = new com_http($url);
 		$request_http->exec(10, 2);
-		$eqLogic->updateState($request_http->exec(10, 2));
-		$eqLogic->save();
+		$eqLogic->updateState();
 	}
 
 	/*     * **********************Getteur Setteur*************************** */
