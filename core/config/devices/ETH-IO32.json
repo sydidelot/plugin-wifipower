@@ -11,7 +11,7 @@
                 "type": "action",
                 "subtype": "other",
                 "isVisible": 1,
-                "value": "Etat 1",
+                "value": "Sortie 1",
                 "logicalId": "SET_DO1=1",
                 "template": {
                     "dashboard": "prise",
@@ -23,7 +23,7 @@
                 "type": "action",
                 "subtype": "other",
                 "isVisible": 1,
-                "value": "Etat 1",
+                "value": "Sortie 1",
                 "logicalId": "SET_DO1=0",
                 "template": {
                     "dashboard": "prise",
@@ -31,19 +31,19 @@
                 }
             },
             {
-                "name": "Etat 1",
+                "name": "Sortie 1",
                 "type": "info",
                 "subtype": "binary",
                 "isVisible": 0,
                 "eventOnly": 1,
-                "logicalId": "R1"
+                "logicalId": "DOR0"
             },
             {
                 "name": "On 2",
                 "type": "action",
                 "subtype": "other",
                 "isVisible": 1,
-                "value": "Etat 2",
+                "value": "Sortie 2",
                 "logicalId": "SET_DO2=1",
                 "template": {
                     "dashboard": "prise",
@@ -55,7 +55,7 @@
                 "type": "action",
                 "subtype": "other",
                 "isVisible": 1,
-                "value": "Etat 2",
+                "value": "Sortie 2",
                 "logicalId": "SET_DO2=0",
                 "template": {
                     "dashboard": "prise",
@@ -63,19 +63,19 @@
                 }
             },
             {
-                "name": "Etat 2",
+                "name": "Sortie 2",
                 "type": "info",
                 "subtype": "binary",
                 "isVisible": 0,
                 "eventOnly": 1,
-                "logicalId": "R2"
+                "logicalId": "DOR1"
             },
             {
                 "name": "On 3",
                 "type": "action",
                 "subtype": "other",
                 "isVisible": 1,
-                "value": "Etat 3",
+                "value": "Sortie 3",
                 "logicalId": "SET_DO3=1",
                 "template": {
                     "dashboard": "prise",
@@ -87,7 +87,7 @@
                 "type": "action",
                 "subtype": "other",
                 "isVisible": 1,
-                "value": "Etat 3",
+                "value": "Sortie 3",
                 "logicalId": "SET_DO3=0",
                 "template": {
                     "dashboard": "prise",
@@ -95,19 +95,19 @@
                 }
             },
             {
-                "name": "Etat 3",
+                "name": "Sortie 3",
                 "type": "info",
                 "subtype": "binary",
                 "isVisible": 0,
                 "eventOnly": 1,
-                "logicalId": "R3"
+                "logicalId": "DOR2"
             },
             {
                 "name": "On 4",
                 "type": "action",
                 "subtype": "other",
                 "isVisible": 1,
-                "value": "Etat 4",
+                "value": "Sortie 4",
                 "logicalId": "SET_DO4=1",
                 "template": {
                     "dashboard": "prise",
@@ -119,7 +119,7 @@
                 "type": "action",
                 "subtype": "other",
                 "isVisible": 1,
-                "value": "Etat 4",
+                "value": "Sortie 4",
                 "logicalId": "SET_DO4=0",
                 "template": {
                     "dashboard": "prise",
@@ -127,19 +127,19 @@
                 }
             },
             {
-                "name": "Etat 4",
+                "name": "Sortie 4",
                 "type": "info",
                 "subtype": "binary",
                 "isVisible": 0,
                 "eventOnly": 1,
-                "logicalId": "R4"
+                "logicalId": "DOR3"
             },
             {
                 "name": "On 5",
                 "type": "action",
                 "subtype": "other",
                 "isVisible": 1,
-                "value": "Etat 5",
+                "value": "Sortie 5",
                 "logicalId": "SET_DO5=1",
                 "template": {
                     "dashboard": "prise",
@@ -151,7 +151,7 @@
                 "type": "action",
                 "subtype": "other",
                 "isVisible": 1,
-                "value": "Etat 5",
+                "value": "Sortie 5",
                 "logicalId": "SET_DO5=0",
                 "template": {
                     "dashboard": "prise",
@@ -159,19 +159,19 @@
                 }
             },
             {
-                "name": "Etat 5",
+                "name": "Sortie 5",
                 "type": "info",
                 "subtype": "binary",
                 "isVisible": 0,
                 "eventOnly": 1,
-                "logicalId": "R5"
+                "logicalId": "DOR4"
             },
             {
                 "name": "On 6",
                 "type": "action",
                 "subtype": "other",
                 "isVisible": 1,
-                "value": "Etat 6",
+                "value": "Sortie 6",
                 "logicalId": "SET_DO6=1",
                 "template": {
                     "dashboard": "prise",
@@ -183,7 +183,7 @@
                 "type": "action",
                 "subtype": "other",
                 "isVisible": 1,
-                "value": "Etat 6",
+                "value": "Sortie 6",
                 "logicalId": "SET_DO6=0",
                 "template": {
                     "dashboard": "prise",
@@ -191,19 +191,19 @@
                 }
             },
             {
-                "name": "Etat 6",
+                "name": "Sortie 6",
                 "type": "info",
                 "subtype": "binary",
                 "isVisible": 0,
                 "eventOnly": 1,
-                "logicalId": "R6"
+                "logicalId": "DOR5"
             },
             {
                 "name": "On 7",
                 "type": "action",
                 "subtype": "other",
                 "isVisible": 1,
-                "value": "Etat 7",
+                "value": "Sortie 7",
                 "logicalId": "SET_DO7=1",
                 "template": {
                     "dashboard": "prise",
@@ -215,7 +215,7 @@
                 "type": "action",
                 "subtype": "other",
                 "isVisible": 1,
-                "value": "Etat 7",
+                "value": "Sortie 7",
                 "logicalId": "SET_DO7=0",
                 "template": {
                     "dashboard": "prise",
@@ -223,19 +223,19 @@
                 }
             },
             {
-                "name": "Etat 7",
+                "name": "Sortie 7",
                 "type": "info",
                 "subtype": "binary",
                 "isVisible": 0,
                 "eventOnly": 1,
-                "logicalId": "R7"
+                "logicalId": "DOR6"
             },
             {
                 "name": "On 8",
                 "type": "action",
                 "subtype": "other",
                 "isVisible": 1,
-                "value": "Etat 8",
+                "value": "Sortie 8",
                 "logicalId": "SET_DO8=1",
                 "template": {
                     "dashboard": "prise",
@@ -247,7 +247,7 @@
                 "type": "action",
                 "subtype": "other",
                 "isVisible": 1,
-                "value": "Etat 8",
+                "value": "Sortie 8",
                 "logicalId": "SET_DO8=0",
                 "template": {
                     "dashboard": "prise",
@@ -255,12 +255,96 @@
                 }
             },
             {
-                "name": "Etat 8",
+                "name": "Sortie 8",
                 "type": "info",
                 "subtype": "binary",
                 "isVisible": 0,
                 "eventOnly": 1,
-                "logicalId": "R8"
+                "logicalId": "DOR7"
+            },
+            {
+                "name": "Entrée 1",
+                "type": "info",
+                "subtype": "binary",
+                "eventOnly": 1,
+                "logicalId": "DID0"
+            },
+            {
+                "name": "Entrée 2",
+                "type": "info",
+                "subtype": "binary",
+                "eventOnly": 1,
+                "logicalId": "DID1"
+            },
+            {
+                "name": "Entrée 3",
+                "type": "info",
+                "subtype": "binary",
+                "eventOnly": 1,
+                "logicalId": "DID2"
+            },
+            {
+                "name": "Entrée 4",
+                "type": "info",
+                "subtype": "binary",
+                "eventOnly": 1,
+                "logicalId": "DID3"
+            },
+            {
+                "name": "Entrée 5",
+                "type": "info",
+                "subtype": "binary",
+                "eventOnly": 1,
+                "logicalId": "DID4"
+            },
+            {
+                "name": "Entrée 6",
+                "type": "info",
+                "subtype": "binary",
+                "eventOnly": 1,
+                "logicalId": "DID5"
+            },
+            {
+                "name": "Entrée 7",
+                "type": "info",
+                "subtype": "binary",
+                "eventOnly": 1,
+                "logicalId": "DID6"
+            },
+            {
+                "name": "Entrée 8",
+                "type": "info",
+                "subtype": "binary",
+                "eventOnly": 1,
+                "logicalId": "DID7"
+            },
+            {
+                "name": "Analogique 1",
+                "type": "info",
+                "subtype": "numeric",
+                "eventOnly": 1,
+                "logicalId": "AIA0"
+            },
+            {
+                "name": "Analogique 2",
+                "type": "info",
+                "subtype": "numeric",
+                "eventOnly": 1,
+                "logicalId": "AIA1"
+            },
+            {
+                "name": "Analogique 3",
+                "type": "info",
+                "subtype": "numeric",
+                "eventOnly": 1,
+                "logicalId": "AIA2"
+            },
+            {
+                "name": "Analogique 4",
+                "type": "info",
+                "subtype": "numeric",
+                "eventOnly": 1,
+                "logicalId": "AIA3"
             }
         ]
     }

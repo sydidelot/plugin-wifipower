@@ -205,16 +205,47 @@ class wifipower extends eqLogic {
 		}
 		$xml = new SimpleXMLElement($request_http->exec(10, 2));
 		$wifipower = json_decode(json_encode($xml), true);
-		foreach ($wifipower['out'] as $relai => $state) {
-			$cmd = $this->getCmd(null, $relai);
-			if (is_object($cmd)) {
-				if ($cmd->execCmd() != $cmd->formatValue($state)) {
-					$cmd->setCollectDate('');
-					$cmd->event($state);
+		if (isset($wifipower['DIGOUT'])) {
+			foreach ($wifipower['DIGOUT']['out'] as $relai => $state) {
+				$cmd = $this->getCmd(null, 'DO' . $relai);
+				if (is_object($cmd)) {
+					if ($cmd->execCmd() != $cmd->formatValue($state)) {
+						$cmd->setCollectDate('');
+						$cmd->event($state);
+					}
+				}
+			}
+			foreach ($wifipower['DIGIN']['in'] as $relai => $state) {
+				$cmd = $this->getCmd(null, 'DI' . $relai);
+				if (is_object($cmd)) {
+					if ($cmd->execCmd() != $cmd->formatValue($state)) {
+						$cmd->setCollectDate('');
+						$cmd->event($state);
+					}
+				}
+			}
+			foreach ($wifipower['ANAIN']['in'] as $relai => $state) {
+				$cmd = $this->getCmd(null, 'AI' . $relai);
+				if (is_object($cmd)) {
+					if ($cmd->execCmd() != $cmd->formatValue($state)) {
+						$cmd->setCollectDate('');
+						$cmd->event($state);
+					}
+				}
+			}
+		} else {
+			foreach ($wifipower['out'] as $relai => $state) {
+				$cmd = $this->getCmd(null, $relai);
+				if (is_object($cmd)) {
+					if ($cmd->execCmd() != $cmd->formatValue($state)) {
+						$cmd->setCollectDate('');
+						$cmd->event($state);
+					}
 				}
 			}
 		}
-		if ($this->getConfiguration('type') != $wifipower['device']['type']) {
+
+		if (isset($wifipower['device']['type']) && $this->getConfiguration('type') != $wifipower['device']['type']) {
 			$this->setConfiguration('type', $wifipower['device']['type']);
 			$this->save();
 		}
