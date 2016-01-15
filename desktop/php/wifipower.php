@@ -112,7 +112,7 @@ foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
             </div>
             <label class="col-sm-2 control-label">{{Mot de passe}}</label>
             <div class="col-sm-3">
-                <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="password" />
+                <input type="password" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="password" />
             </div>
         </div>
     </fieldset>

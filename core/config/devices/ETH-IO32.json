@@ -3,7 +3,7 @@
         "name": "ETH-IO32",
         "configuration" : {
             "complement" : "API",
-            "port" : "2000",
+            "port" : "2000"
         },
         "commands": [
             {
