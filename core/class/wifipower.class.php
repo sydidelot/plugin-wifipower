@@ -92,7 +92,9 @@ class wifipower extends eqLogic {
 		if ($this->getConfiguration('device') != $this->getConfiguration('applyDevice')) {
 			$this->applyModuleConfiguration();
 		}
-		$this->updateState();
+		if ($this->getConfiguration('ip') != '') {
+			$this->updateState();
+		}
 	}
 
 	public function applyModuleConfiguration() {

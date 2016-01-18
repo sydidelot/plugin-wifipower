@@ -12,7 +12,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Sortie 1",
-                "logicalId": "SET_DO1=1",
+                "logicalId": "SET_DO0=1",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -24,7 +24,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Sortie 1",
-                "logicalId": "SET_DO1=0",
+                "logicalId": "SET_DO0=0",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -44,7 +44,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Sortie 2",
-                "logicalId": "SET_DO2=1",
+                "logicalId": "SET_DO1=1",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -56,7 +56,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Sortie 2",
-                "logicalId": "SET_DO2=0",
+                "logicalId": "SET_DO1=0",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -76,7 +76,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Sortie 3",
-                "logicalId": "SET_DO3=1",
+                "logicalId": "SET_DO2=1",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -88,7 +88,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Sortie 3",
-                "logicalId": "SET_DO3=0",
+                "logicalId": "SET_DO2=0",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -108,7 +108,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Sortie 4",
-                "logicalId": "SET_DO4=1",
+                "logicalId": "SET_DO3=1",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -120,7 +120,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Sortie 4",
-                "logicalId": "SET_DO4=0",
+                "logicalId": "SET_DO3=0",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -140,7 +140,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Sortie 5",
-                "logicalId": "SET_DO5=1",
+                "logicalId": "SET_DO4=1",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -152,7 +152,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Sortie 5",
-                "logicalId": "SET_DO5=0",
+                "logicalId": "SET_DO4=0",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -172,7 +172,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Sortie 6",
-                "logicalId": "SET_DO6=1",
+                "logicalId": "SET_DO5=1",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -184,7 +184,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Sortie 6",
-                "logicalId": "SET_DO6=0",
+                "logicalId": "SET_DO5=0",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -204,7 +204,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Sortie 7",
-                "logicalId": "SET_DO7=1",
+                "logicalId": "SET_DO6=1",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -216,7 +216,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Sortie 7",
-                "logicalId": "SET_DO7=0",
+                "logicalId": "SET_DO6=0",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -236,7 +236,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Sortie 8",
-                "logicalId": "SET_DO8=1",
+                "logicalId": "SET_DO7=1",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
@@ -248,7 +248,7 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "value": "Sortie 8",
-                "logicalId": "SET_DO8=0",
+                "logicalId": "SET_DO7=0",
                 "template": {
                     "dashboard": "prise",
                     "mobile": "prise"
