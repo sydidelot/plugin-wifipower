@@ -209,6 +209,9 @@ class wifipower extends eqLogic {
 		$wifipower = json_decode(json_encode($xml), true);
 		if (isset($wifipower['DIGOUT'])) {
 			foreach ($wifipower['DIGOUT']['out'] as $relai => $state) {
+				if ($state == '') {
+					$state = 0;
+				}
 				$cmd = $this->getCmd(null, 'DO' . $relai);
 				if (is_object($cmd)) {
 					if ($cmd->execCmd() != $cmd->formatValue($state)) {
@@ -218,6 +221,9 @@ class wifipower extends eqLogic {
 				}
 			}
 			foreach ($wifipower['DIGIN']['in'] as $relai => $state) {
+				if ($state == '') {
+					$state = 0;
+				}
 				$cmd = $this->getCmd(null, 'DI' . $relai);
 				if (is_object($cmd)) {
 					if ($cmd->execCmd() != $cmd->formatValue($state)) {
@@ -227,6 +233,9 @@ class wifipower extends eqLogic {
 				}
 			}
 			foreach ($wifipower['ANAIN']['in'] as $relai => $state) {
+				if ($state == '') {
+					$state = 0;
+				}
 				$cmd = $this->getCmd(null, 'AI' . $relai);
 				if (is_object($cmd)) {
 					if ($cmd->execCmd() != $cmd->formatValue($state)) {
@@ -237,6 +246,9 @@ class wifipower extends eqLogic {
 			}
 		} else {
 			foreach ($wifipower['out'] as $relai => $state) {
+				if ($state == '') {
+					$state = 0;
+				}
 				$cmd = $this->getCmd(null, $relai);
 				if (is_object($cmd)) {
 					if ($cmd->execCmd() != $cmd->formatValue($state)) {
