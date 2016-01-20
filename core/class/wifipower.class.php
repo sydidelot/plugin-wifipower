@@ -84,7 +84,7 @@ class wifipower extends eqLogic {
 
 	public function preSave() {
 		if ($this->getConfiguration('port') == '') {
-			$this->getConfiguration('port', 2000);
+			$this->setConfiguration('port', 2000);
 		}
 	}
 
@@ -214,7 +214,7 @@ class wifipower extends eqLogic {
 				}
 				$cmd = $this->getCmd(null, 'DO' . $relai);
 				if (is_object($cmd)) {
-					if ($cmd->execCmd() != $cmd->formatValue($state)) {
+					if ($cmd->execCmd() !== $cmd->formatValue($state)) {
 						$cmd->setCollectDate('');
 						$cmd->event($state);
 					}
@@ -226,7 +226,7 @@ class wifipower extends eqLogic {
 				}
 				$cmd = $this->getCmd(null, 'DI' . $relai);
 				if (is_object($cmd)) {
-					if ($cmd->execCmd() != $cmd->formatValue($state)) {
+					if ($cmd->execCmd() !== $cmd->formatValue($state)) {
 						$cmd->setCollectDate('');
 						$cmd->event($state);
 					}
@@ -238,7 +238,7 @@ class wifipower extends eqLogic {
 				}
 				$cmd = $this->getCmd(null, 'AI' . $relai);
 				if (is_object($cmd)) {
-					if ($cmd->execCmd() != $cmd->formatValue($state)) {
+					if ($cmd->execCmd() !== $cmd->formatValue($state)) {
 						$cmd->setCollectDate('');
 						$cmd->event($state);
 					}
@@ -251,7 +251,7 @@ class wifipower extends eqLogic {
 				}
 				$cmd = $this->getCmd(null, $relai);
 				if (is_object($cmd)) {
-					if ($cmd->execCmd() != $cmd->formatValue($state)) {
+					if ($cmd->execCmd() !== $cmd->formatValue($state)) {
 						$cmd->setCollectDate('');
 						$cmd->event($state);
 					}

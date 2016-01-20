@@ -1,9 +1,6 @@
 {
     "WP-PANEL-SW8": {
         "name": "WP-PANEL-SW8",
-        "configuration" : {
-            "port" : "2000"
-        },
         "commands": [
             {
                 "name": "On 1",

@@ -1,9 +1,6 @@
 {
     "WP-PANEL-REL2": {
         "name": "WP-PANEL-REL2",
-        "configuration" : {
-            "port" : "2000"
-        },
         "commands": [
             {
                 "name": "On 1",
