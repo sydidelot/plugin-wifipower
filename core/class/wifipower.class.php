@@ -285,7 +285,6 @@ class wifipowerCmd extends cmd {
 		$url = $eqLogic->getUrl();
 		$url .= $this->getLogicalId();
 		$request_http = new com_http($url);
-		/* $request_http->exec(10, 2); */
 		$xml_action = new SimpleXMLElement($request_http->exec(10, 2));
 		$eqLogic->updateState($xml_action);
 	}
