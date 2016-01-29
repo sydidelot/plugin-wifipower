@@ -199,13 +199,15 @@ class wifipower extends eqLogic {
 		return $url;
 	}
 
-	public function updateState() {
-		try {
-			$request_http = new com_http($this->getUrl() . 'Q');
-		} catch (Exception $e) {
-			return;
+	public function updateState($xml = null) {
+		if ($xml == null) {
+			try {
+				$request_http = new com_http($this->getUrl() . 'Q');
+			} catch (Exception $e) {
+				return;
+			}
+			$xml = new SimpleXMLElement($request_http->exec(10, 2));
 		}
-		$xml = new SimpleXMLElement($request_http->exec(10, 2));
 		$wifipower = json_decode(json_encode($xml), true);
 		if (isset($wifipower['DIGOUT'])) {
 			foreach ($wifipower['DIGOUT']['out'] as $relai => $state) {
@@ -283,8 +285,9 @@ class wifipowerCmd extends cmd {
 		$url = $eqLogic->getUrl();
 		$url .= $this->getLogicalId();
 		$request_http = new com_http($url);
-		$request_http->exec(10, 2);
-		$eqLogic->updateState();
+		/* $request_http->exec(10, 2); */
+		$xml_action = new SimpleXMLElement($request_http->exec(10, 2));
+		$eqLogic->updateState($xml_action);
 	}
 
 	/*     * **********************Getteur Setteur*************************** */
