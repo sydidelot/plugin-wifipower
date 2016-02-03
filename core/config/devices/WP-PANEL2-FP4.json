@@ -1,0 +1,207 @@
+{
+    "WP-PANEL2-FP4": {
+        "name": "WP-PANEL2-FP4",
+        "commands": [
+            {
+                "name": "Etat 1",
+                "type": "info",
+                "subtype": "string",
+                "isVisible": 1,
+                "eventOnly": 1,
+                "logicalId": "FP0"
+            },
+            {
+                "name": "Arrêt 1",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F00"
+            },
+            {
+                "name": "Eco 1",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F01"
+            },
+            {
+                "name": "Hors Gel 1",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F02"
+            },
+            {
+                "name": "Confort 1",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F03"
+            },
+            {
+                "name": "Confort-1 1",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F04"
+            },
+            {
+                "name": "Confort-2 1",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F05"
+            },
+            {
+                "name": "Etat 2",
+                "type": "info",
+                "subtype": "string",
+                "isVisible": 0,
+                "eventOnly": 1,
+                "logicalId": "FP1"
+            },
+            {
+                "name": "Arrêt 2",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F10"
+            },
+            {
+                "name": "Eco 2",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F11"
+            },
+            {
+                "name": "Hors Gel 2",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F12"
+            },
+            {
+                "name": "Confort 2",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F13"
+            },
+            {
+                "name": "Confort-1 2",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F14"
+            },
+            {
+                "name": "Confort-2 2",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F15"
+            },
+            {
+                "name": "Etat 3",
+                "type": "info",
+                "subtype": "string",
+                "isVisible": 1,
+                "eventOnly": 1,
+                "logicalId": "FP2"
+            },
+            {
+                "name": "Arrêt 3",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F20"
+            },
+            {
+                "name": "Eco 3",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F21"
+            },
+            {
+                "name": "Hors Gel 3",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F22"
+            },
+            {
+                "name": "Confort 3",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F23"
+            },
+            {
+                "name": "Confort-1 3",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F24"
+            },
+            {
+                "name": "Confort-2 3",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F25"
+            },
+             {
+                "name": "Arrêt 4",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F30"
+            },
+            {
+                "name": "Eco 4",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F31"
+            },
+            {
+                "name": "Hors Gel 4",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F32"
+            },
+            {
+                "name": "Confort 4",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F33"
+            },
+            {
+                "name": "Confort-1 4",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F34"
+            },
+            {
+                "name": "Confort-2 4",
+                "type": "action",
+                "subtype": "other",
+                "isVisible": 1,
+                "logicalId": "F35"
+            },
+            {
+                "name": "Etat 4",
+                "type": "info",
+                "subtype": "string",
+                "isVisible": 1,
+                "eventOnly": 1,
+                "logicalId": "FP3"
+            }
+        ]
+    }
+}

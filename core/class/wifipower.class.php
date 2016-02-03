@@ -234,6 +234,7 @@ class wifipower extends eqLogic {
 					}
 				}
 			}
+
 			foreach ($wifipower['ANAIN']['in'] as $relai => $state) {
 				if ($state == '') {
 					$state = 0;
@@ -250,6 +251,28 @@ class wifipower extends eqLogic {
 			foreach ($wifipower['out'] as $relai => $state) {
 				if ($state == '') {
 					$state = 0;
+				}
+				if (strpos($relai, 'FP') !== false) {
+					switch ($state) {
+						case 0:
+							$state = __('Arrêt', __FILE__);
+							break;
+						case 1:
+							$state = __('Eco', __FILE__);
+							break;
+						case 2:
+							$state = __('Hors Gel', __FILE__);
+							break;
+						case 3:
+							$state = __('Confort', __FILE__);
+							break;
+						case 4:
+							$state = __('Confort-1', __FILE__);
+							break;
+						case 5:
+							$state = __('Confort-2', __FILE__);
+							break;
+					}
 				}
 				$cmd = $this->getCmd(null, $relai);
 				if (is_object($cmd)) {
