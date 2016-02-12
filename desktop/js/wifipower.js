@@ -58,7 +58,6 @@
     tr += '<span><input type="checkbox" class="cmdAttr bootstrapSwitch" data-l1key="isHistorized" data-size="mini" data-label-text="{{Historiser}}" /></span> ';
     tr += '<span><input type="checkbox" class="cmdAttr bootstrapSwitch" data-l1key="isVisible" data-size="mini" data-label-text="{{Afficher}}" checked/></span> ';
     tr += '<span><input type="checkbox" class="cmdAttr bootstrapSwitch expertModeVisible" data-l1key="display" data-size="mini" data-label-text="{{Inverser}}" data-l2key="invertBinary" /></span> ';
-    tr += '<input style="width : 150px;" class="tooltips cmdAttr form-control expertModeVisible input-sm" data-size="mini" data-l1key="cache" data-l2key="lifetime" placeholder="Lifetime cache">';
     tr += '</td>';
     tr += '<td>';
     if (is_numeric(_cmd.id)) {
