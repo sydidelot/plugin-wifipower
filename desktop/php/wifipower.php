@@ -27,12 +27,12 @@ foreach ($eqLogics as $eqLogic) {
     </legend>
     <div class="eqLogicThumbnailContainer">
       <div class="cursor eqLogicAction" data-action="add" style="background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;" >
-         <center>
-            <i class="fa fa-plus-circle" style="font-size : 7em;color:#94ca02;"></i>
-        </center>
-        <span style="font-size : 1.1em;position:relative; top : 23px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;color:#94ca02"><center>Ajouter</center></span>
-    </div>
-    <?php
+       <center>
+        <i class="fa fa-plus-circle" style="font-size : 7em;color:#94ca02;"></i>
+    </center>
+    <span style="font-size : 1.1em;position:relative; top : 23px;word-break: break-all;white-space: pre-wrap;word-wrap: break-word;color:#94ca02"><center>Ajouter</center></span>
+</div>
+<?php
 foreach ($eqLogics as $eqLogic) {
 	$opacity = ($eqLogic->getIsEnable()) ? '' : jeedom::getConfiguration('eqLogic:style:noactive');
 	echo '<div class="eqLogicDisplayCard cursor" data-eqLogic_id="' . $eqLogic->getId() . '" style="background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;' . $opacity . '" >';
@@ -95,7 +95,7 @@ foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
             <div class="form-group">
                 <label class="col-sm-3 control-label">{{Address}}</label>
                 <div class="col-sm-9">
-                   <div class="input-group">
+                 <div class="input-group">
                     <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="ip" />
                     <span class="input-group-addon">:</span>
                     <input type="text" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="port" value="2000"/>
@@ -113,6 +113,12 @@ foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
             <label class="col-sm-2 control-label">{{Mot de passe}}</label>
             <div class="col-sm-3">
                 <input type="password" class="eqLogicAttr form-control" data-l1key="configuration" data-l2key="password" />
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-3 control-label">{{URL de push}}</label>
+            <div class="col-sm-9">
+                <?php echo network::getNetworkAccess('internal') ?>/plugins/wifipower/core/php/jeeWifipower.php?api=<?php echo config::byKey('api'); ?>
             </div>
         </div>
     </fieldset>
@@ -134,9 +140,9 @@ foreach (wifipower::devicesParameters() as $id => $info) {
        </div>
    </div>
    <center style="height : 255px;">
-     <br/><br/><br/>
-     <img src="plugins/wifipower/doc/images/wifipower_icon.png" id="img_device" class="img-responsive" style="max-height : 250px;" />
- </center>
+       <br/><br/><br/>
+       <img src="plugins/wifipower/doc/images/wifipower_icon.png" id="img_device" class="img-responsive" style="max-height : 250px;" />
+   </center>
 </div>
 </div>
 

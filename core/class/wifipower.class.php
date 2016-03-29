@@ -75,6 +75,7 @@ class wifipower extends eqLogic {
 		if ($this->getConfiguration('ip') == '') {
 			throw new Exception(__('Le champs IP ne peut être vide', __FILE__));
 		}
+		$this->setLogicalId($this->getConfiguration('ip'));
 		try {
 			$this->updateState();
 		} catch (Exception $e) {
