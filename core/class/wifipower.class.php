@@ -65,6 +65,9 @@ class wifipower extends eqLogic {
 
 	public static function pull() {
 		foreach (eqLogic::byType('wifipower', true) as $eqLogic) {
+			if ($eqLogic->getConfiguration('pushOnly', 0) == 1) {
+				continue;
+			}
 			$eqLogic->updateState();
 		}
 	}

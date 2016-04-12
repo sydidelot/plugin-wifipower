@@ -22,12 +22,15 @@ if (!jeedom::apiAccess(init('apikey'))) {
 	echo 'Clef API non valide, vous n\'êtes pas autorisé à effectuer cette action';
 	die();
 }
-
+log::add('wifipower', 'debug', 'Demande push recu de : ' . getClientIp());
 $wifipower = wifipower::byLogicalId(getClientIp(), 'wifipower');
 
 if (!is_object($wifipower)) {
+	log::add('wifipower', 'debug', 'Wifipower inconnu');
 	die();
 }
 $request = file_get_contents("php://input");
+log::add('wifipower', 'debug', 'php input : ' . print_r($request, true));
+log::add('wifipower', 'debug', 'POST : ' . print_r($_POST, true));
 $xml_action = new SimpleXMLElement($request);
 $wifipower->updateState($xml_action);
