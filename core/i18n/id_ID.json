@@ -1,0 +1,31 @@
+{
+    "plugins/wifipower/desktop/php/wifipower.php": {
+        "Ajouter un Wifipower": "Tambahkan Wifipower",
+        "Rechercher": "Mencari",
+        "Mes wifipower": "Wifipowerku",
+        "Vous n'avez pas encore de wifipower, cliquez sur Ajouter un Wifipower pour commencer": "Anda tidak memiliki wifipower, klik Tambah untuk memulai Wifipower",
+        "Général": "Umum",
+        "Nom de l'équipement wifipower": "Nama peralatan wifipower",
+        "Objet parent": "Objek induk",
+        "Aucun": "Tak ada",
+        "Catégorie": "Kategori",
+        "Activer": "Mengaktifkan",
+        "Visible": "Terlihat",
+        "Modèle": "Model",
+        "IP": "IP",
+        "Nom d'utilisateur": "Nama pemakai",
+        "Mot de passe": "Password",
+        "Port": "Port",
+        "Commande": "Pesanan",
+        "Nom": "Nama",
+        "Type": "Jenis",
+        "Logical ID": "Logical ID",
+        "Options": "Pilihan",
+        "Supprimer": "Menghapus",
+        "Sauvegarder": "Menyimpan"
+    },
+    "plugins/wifipower/plugin_info/info.xml": {
+        "Plugin pour la gestion des équipements wifipower": "Plugin untuk mengelola peralatan wifipower",
+        "Aucune": "Tak ada"
+    }
+}

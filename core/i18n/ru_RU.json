@@ -1,0 +1,31 @@
+{
+    "plugins/wifipower/desktop/php/wifipower.php": {
+        "Ajouter un Wifipower": "Добавить Wifipower",
+        "Rechercher": "Искать",
+        "Mes wifipower": "Мой wifipower",
+        "Vous n'avez pas encore de wifipower, cliquez sur Ajouter un Wifipower pour commencer": "У Вас пока нет Wifipower. Нажмите Добавить, чтобы начать работу с Wifipower",
+        "Général": "Главная",
+        "Nom de l'équipement wifipower": "Название оборудования Wifipower",
+        "Objet parent": "Родительский объект",
+        "Aucun": "Нет",
+        "Catégorie": "Категория",
+        "Activer": "Активировать",
+        "Visible": "Видимый",
+        "Modèle": "Модель",
+        "IP": "IP",
+        "Nom d'utilisateur": "Имя пользователя",
+        "Mot de passe": "Пароль",
+        "Port": "Порт",
+        "Commande": "Команда",
+        "Nom": "Имя",
+        "Type": "Тип",
+        "Logical ID": "Локальный идентификатор",
+        "Options": "Опции",
+        "Supprimer": "Удалить",
+        "Sauvegarder": "Сохранить"
+    },
+    "plugins/wifipower/plugin_info/info.xml": {
+        "Plugin pour la gestion des équipements wifipower": "Плагин для управления wifipower оборудованием",
+        "Aucune": "Нет"
+    }
+}

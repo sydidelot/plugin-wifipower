@@ -1,0 +1,31 @@
+{
+    "plugins/wifipower/desktop/php/wifipower.php": {
+        "Ajouter un Wifipower": "Aggiungi un dispositivo Wifipower",
+        "Rechercher": "Cerca",
+        "Mes wifipower": "I miei dispositivi Wifipower",
+        "Vous n'avez pas encore de wifipower, cliquez sur Ajouter un Wifipower pour commencer": "Non hai ancora alcun dispositivo Wifipower. Clicca su Aggiungi un dispositivo Wifipower per iniziare",
+        "Général": "Principale",
+        "Nom de l'équipement wifipower": "Nome del dispositivo Wifipower",
+        "Objet parent": "Oggetto padre",
+        "Aucun": "Nessuno",
+        "Catégorie": "Categoria",
+        "Activer": "Attivare",
+        "Visible": "Visibile",
+        "Modèle": "Modello",
+        "IP": "IP",
+        "Nom d'utilisateur": "Nome utente",
+        "Mot de passe": "Password",
+        "Port": "Porta",
+        "Commande": "Comando",
+        "Nom": "Nome",
+        "Type": "Tipo",
+        "Logical ID": "ID logico",
+        "Options": "Opzioni",
+        "Supprimer": "Elimina",
+        "Sauvegarder": "Salva"
+    },
+    "plugins/wifipower/plugin_info/info.xml": {
+        "Plugin pour la gestion des équipements wifipower": "Plugin per la gestione di dispositivi Wifipower",
+        "Aucune": "Nessuno"
+    }
+}
