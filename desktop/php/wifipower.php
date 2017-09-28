@@ -45,12 +45,23 @@ foreach ($eqLogics as $eqLogic) {
 </div>
 
 <div class="col-lg-10 col-md-9 col-sm-8 eqLogic" style="border-left: solid 1px #EEE; padding-left: 25px;display: none;">
-    <div class="row">
+   <a class="btn btn-success eqLogicAction pull-right" data-action="save"><i class="fa fa-check-circle"></i> {{Sauvegarder}}</a>
+  <a class="btn btn-danger eqLogicAction pull-right" data-action="remove"><i class="fa fa-minus-circle"></i> {{Supprimer}}</a>
+  <a class="btn btn-default eqLogicAction pull-right" data-action="configure"><i class="fa fa-cogs"></i> {{Configuration avancée}}</a>
+  <a class="btn btn-default eqLogicAction pull-right" data-action="copy"><i class="fa fa-files-o"></i> {{Dupliquer}}</a>
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation"><a class="eqLogicAction" aria-controls="home" role="tab" data-toggle="tab" data-action="returnToThumbnailDisplay"><i class="fa fa-arrow-circle-left"></i></a></li>
+    <li role="presentation" class="active"><a href="#eqlogictab" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-tachometer"></i> {{Equipement}}</a></li>
+    <li role="presentation"><a href="#commandtab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-list-alt"></i> {{Commandes}}</a></li>
+  </ul>
+  <div class="tab-content" style="height:calc(100% - 50px);overflow:auto;overflow-x: hidden;">
+    <div role="tabpanel" class="tab-pane active" id="eqlogictab">
+      <br/>
+      <div class="row">
         <div class="col-sm-6">
-            <form class="form-horizontal">
-                <fieldset>
-                    <legend><i class="fa fa-arrow-circle-left eqLogicAction cursor" data-action="returnToThumbnailDisplay"></i> {{Général}}  <i class='fa fa-cogs eqLogicAction pull-right cursor expertModeVisible' data-action='configure'></i></legend>
-                    <div class="form-group">
+          <form class="form-horizontal">
+            <fieldset>
+              <div class="form-group">
                         <label class="col-sm-3 control-label">{{Nom de l'équipement wifipower}}</label>
                         <div class="col-sm-6">
                             <input type="text" class="eqLogicAttr form-control" data-l1key="id" style="display : none;" />
@@ -116,7 +127,7 @@ foreach (jeedom::getConfiguration('eqLogic:category') as $key => $value) {
         <div class="form-group">
             <label class="col-sm-3 control-label" >{{Désactiver le pull (push uniquement)}}</label>
             <div class="col-sm-9">
-            <input type="checkbox" class="eqLogicAttr bootstrapSwitch" data-l1key="configuration" data-l2key="pushOnly" />
+            <input type="checkbox" class="eqLogicAttr" data-l1key="configuration" data-l2key="pushOnly" />
             </div>
         </div>
         <div class="form-group">
@@ -149,9 +160,10 @@ foreach (wifipower::devicesParameters() as $id => $info) {
  </center>
 </div>
 </div>
-
-<legend>{{Commande}}</legend>
-<table id="table_cmd" class="table table-bordered table-condensed">
+</div>
+<div role="tabpanel" class="tab-pane" id="commandtab">
+  <a class="btn btn-success btn-sm cmdAction pull-right" data-action="add" style="margin-top:5px;"><i class="fa fa-plus-circle"></i> {{Ajouter une commande}}</a><br/><br/>
+  <table id="table_cmd" class="table table-bordered table-condensed">
     <thead>
         <tr>
             <th style="width: 300px;">{{Nom}}</th>
@@ -165,15 +177,8 @@ foreach (wifipower::devicesParameters() as $id => $info) {
     </tbody>
 </table>
 
-<form class="form-horizontal">
-    <fieldset>
-        <div class="form-actions">
-            <a class="btn btn-danger eqLogicAction" data-action="remove"><i class="fa fa-minus-circle"></i> {{Supprimer}}</a>
-            <a class="btn btn-success eqLogicAction" data-action="save"><i class="fa fa-check-circle"></i> {{Sauvegarder}}</a>
-        </div>
-    </fieldset>
-</form>
-
+</div>
+</div>
 </div>
 </div>
 
