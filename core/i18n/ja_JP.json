@@ -1,0 +1,31 @@
+{
+    "plugins/wifipower/desktop/php/wifipower.php": {
+        "Ajouter un Wifipower": "Wifipowerを追加",
+        "Rechercher": "検索する",
+        "Mes wifipower": "私wifipower",
+        "Vous n'avez pas encore de wifipower, cliquez sur Ajouter un Wifipower pour commencer": "あなたはwifipowerを持っていない、Wifipowerを開始するには、[追加]をクリックします",
+        "Général": "コモン",
+        "Nom de l'équipement wifipower": "wifipower機器に名前を付けます",
+        "Objet parent": "親オブジェクト",
+        "Aucun": "何でもありません",
+        "Catégorie": "カテゴリ",
+        "Activer": "アクティブにし",
+        "Visible": "目に見えます",
+        "Modèle": "モデル",
+        "IP": "IP",
+        "Nom d'utilisateur": "ユーザー名",
+        "Mot de passe": "パスワード",
+        "Port": "ポート",
+        "Commande": "オーダー",
+        "Nom": "表題",
+        "Type": "タイプ",
+        "Logical ID": "論理ID",
+        "Options": "オプション",
+        "Supprimer": "取り除きます",
+        "Sauvegarder": "セーブ"
+    },
+    "plugins/wifipower/plugin_info/info.xml": {
+        "Plugin pour la gestion des équipements wifipower": "機器wifipowerを管理するためのプラグイン",
+        "Aucune": "何でもありません"
+    }
+}

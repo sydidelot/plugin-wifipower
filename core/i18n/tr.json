@@ -1,0 +1,31 @@
+{
+    "plugins/wifipower/desktop/php/wifipower.php": {
+        "Ajouter un Wifipower": "Wifipower ekleyin",
+        "Rechercher": "Arayın",
+        "Mes wifipower": "wifipowerlerim",
+        "Vous n'avez pas encore de wifipower, cliquez sur Ajouter un Wifipower pour commencer": "Wifipowerunuz henüz yok, başlamak için wifipower ekleyine tıklayın",
+        "Général": "Genel",
+        "Nom de l'équipement wifipower": "Wifipower cihazının ismi",
+        "Objet parent": "Üst nesne",
+        "Aucun": "Hiçbir",
+        "Catégorie": "Kategori",
+        "Activer": "Etkinleştirmek",
+        "Visible": "Görülebilir",
+        "Modèle": "Model",
+        "IP": "IP",
+        "Nom d'utilisateur": "Kullanıcı adı ",
+        "Mot de passe": "Şifre",
+        "Port": "Port",
+        "Commande": "Komuta",
+        "Nom": "İsim",
+        "Type": "Ceşit",
+        "Logical ID": "mantıksal ID",
+        "Options": "Opsiyonlar",
+        "Supprimer": "Sil",
+        "Sauvegarder": "Kaydet"
+    },
+    "plugins/wifipower/plugin_info/info.xml": {
+        "Plugin pour la gestion des équipements wifipower": "Wifipower cihazların yönetimi için eklenti",
+        "Aucune": "Hiçbir"
+    }
+}
