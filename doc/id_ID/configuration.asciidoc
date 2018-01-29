@@ -1,1 +1,0 @@
-image::../images/wifipower_icon.png[]

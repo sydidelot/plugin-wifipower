@@ -1,6 +1,0 @@
-= Wifipower
-Plugin pour la gestion des équipements wifipower
-
-'''
-== Configuration
-include::configuration.asciidoc[]
