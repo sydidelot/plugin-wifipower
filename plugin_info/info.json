@@ -5,7 +5,7 @@
 	"licence" : "AGPL",
 	"author" : "Loïc",
 	"require" : "3.0",
-        "category" : "communication",
+        "category" : "communication",
         "changelog" : "https://jeedom.github.io/plugin-wifipower/#language#/changelog",
         "documentation" : "https://jeedom.github.io/plugin-wifipower/#language#/"
 }
