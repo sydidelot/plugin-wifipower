@@ -23,6 +23,50 @@ class wifipower extends eqLogic {
 	/*     * *************************Attributs****************************** */
 
 	/*     * ***********************Methode static*************************** */
+	
+	public static function deamon_info() {
+		$return = array();
+		$return['log'] = '';
+		$return['state'] = 'nok';
+		$cron = cron::byClassAndFunction('wifipower', 'pull');
+		if (is_object($cron) && $cron->running()) {
+			$return['state'] = 'ok';
+		}
+		$return['launchable'] = 'ok';
+		return $return;
+	}
+
+	public static function deamon_start() {
+		self::deamon_stop();
+		$deamon_info = self::deamon_info();
+		if ($deamon_info['launchable'] != 'ok') {
+			throw new Exception(__('Veuillez vérifier la configuration', __FILE__));
+		}
+		$cron = cron::byClassAndFunction('wifipower', 'pull');
+		if (!is_object($cron)) {
+			throw new Exception(__('Tâche cron introuvable', __FILE__));
+		}
+		$cron->setDeamonSleepTime(config::byKey('api::frequency', 'wifipower', 1));
+		$cron->save();
+		$cron->run();
+	}
+
+	public static function deamon_stop() {
+		$cron = cron::byClassAndFunction('wifipower', 'pull');
+		if (!is_object($cron)) {
+			throw new Exception(__('Tâche cron introuvable', __FILE__));
+		}
+		$cron->halt();
+	}
+
+	public static function deamon_changeAutoMode($_mode) {
+		$cron = cron::byClassAndFunction('wifipower', 'pull');
+		if (!is_object($cron)) {
+			throw new Exception(__('Tâche cron introuvable', __FILE__));
+		}
+		$cron->setEnable($_mode);
+		$cron->save();
+	}
 
 	public static function devicesParameters($_device = '') {
 		$path = dirname(__FILE__) . '/../config/devices';
