@@ -24,42 +24,10 @@ if (!isConnect()) {
 ?>
 <form class="form-horizontal">
 	<fieldset>
-    <div class="form-group">
-      <label class="col-lg-4 control-label">{{Demande à faire aux ipx800v4}}</label>
-      <div class="col-lg-8">
-       <label class="checkbox-inline"><input type="checkbox" class="configKey" data-l1key="api::all" />{{[All] Tous}}</label>
-       <label class="checkbox-inline"><input type="checkbox" class="configKey" data-l1key="api::A" />{{[A] Entrée analogique}}</label>
-       <label class="checkbox-inline"><input type="checkbox" class="configKey" data-l1key="api::C" />{{[C] Compteurs}}</label>
-       <label class="checkbox-inline"><input type="checkbox" class="configKey" data-l1key="api::R" />{{[R] Sortie digital (relai)}}</label>
-       <label class="checkbox-inline"><input type="checkbox" class="configKey" data-l1key="api::D" />{{[D] Entrès digital}}</label>
-       <label class="checkbox-inline"><input type="checkbox" class="configKey" data-l1key="api::VI" />{{[VI] Entrée virtuel}}</label>
-       <label class="checkbox-inline"><input type="checkbox" class="configKey" data-l1key="api::VO" />{{[VO] Sortie virtuel}}</label>
-       <label class="checkbox-inline"><input type="checkbox" class="configKey" data-l1key="api::VA" />{{[VA] Entrée analogique}}</label>
-       <label class="checkbox-inline"><input type="checkbox" class="configKey" data-l1key="api::PW" />{{[PW] Watchdog}}</label>
-       <label class="checkbox-inline"><input type="checkbox" class="configKey" data-l1key="api::XTHL" />{{[XTHL] Sonde THL}}</label>
-       <label class="checkbox-inline"><input type="checkbox" class="configKey" data-l1key="api::VR" />{{[VR] Volet roulant}}</label>
-       <label class="checkbox-inline"><input type="checkbox" class="configKey" data-l1key="api::XENO" />{{[XENO] EnOcean}}</label>
-       <label class="checkbox-inline"><input type="checkbox" class="configKey" data-l1key="api::FP" />{{[FP] Fil pilote}}</label>
-       <label class="checkbox-inline"><input type="checkbox" class="configKey" data-l1key="api::G" />{{[G] X-Dimmer}}</label>
-       <label class="checkbox-inline"><input type="checkbox" class="configKey" data-l1key="api::T" />{{[T] Thermostat}}</label>
-     </div>
-   </div>
    <div class="form-group">
     <label class="col-lg-4 control-label">{{Fréquence en secondes des interrogations}}</label>
     <div class="col-lg-1">
       <input type="number" class="configKey form-control" data-l1key="api::frequency" />
-    </div>
-  </div>
-  <div class="form-group">
-    <label class="col-lg-4 control-label">{{Sauvegarder automatique la configuration des IPX800 tous les jours}}</label>
-    <div class="col-lg-8">
-      <input type="checkbox" class="configKey" data-l1key="autosave_ipx_config" />
-    </div>
-  </div>
-  <div class="form-group">
-    <label class="col-lg-4 control-label">{{URL API}}</label>
-    <div class="col-lg-8">
-      <span><?php echo network::getNetworkAccess('internal') . '/core/api/jeeApi.php?type=ipx800v4&apikey=' . jeedom::getApiKey('ipx800v4') . '&onvent=1'; ?></span>
     </div>
   </div>
 </fieldset>
