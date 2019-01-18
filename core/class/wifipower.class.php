@@ -213,49 +213,23 @@ class wifipower extends eqLogic {
 			$xml = new SimpleXMLElement($request_http->exec(10, 2));
 		}
 		$wifipower = json_decode(json_encode($xml), true);
+		log::add('wifipower','debug',json_encode($wifipower));
 		if (isset($wifipower['DIGOUT'])) {
 			foreach ($wifipower['DIGOUT']['out'] as $relai => $state) {
-				if ($state == '') {
-					$state = 0;
-				}
-				$cmd = $this->getCmd(null, 'DO' . $relai);
-				if (is_object($cmd)) {
-					if ($cmd->execCmd() !== $cmd->formatValue($state)) {
-						$cmd->setCollectDate('');
-						$cmd->event($state);
-					}
-				}
+				$state = ($state ===  '') ? 0 : $state;
+				$this->checkAndUpdateCmd('DO' . $relai,$state);
 			}
 			foreach ($wifipower['DIGIN']['in'] as $relai => $state) {
-				if ($state == '') {
-					$state = 0;
-				}
-				$cmd = $this->getCmd(null, 'DI' . $relai);
-				if (is_object($cmd)) {
-					if ($cmd->execCmd() !== $cmd->formatValue($state)) {
-						$cmd->setCollectDate('');
-						$cmd->event($state);
-					}
-				}
+				$state = ($state ===  '') ? 0 : $state;
+				$this->checkAndUpdateCmd('DI' . $relai,$state);
 			}
-
 			foreach ($wifipower['ANAIN']['in'] as $relai => $state) {
-				if ($state == '') {
-					$state = 0;
-				}
-				$cmd = $this->getCmd(null, 'AI' . $relai);
-				if (is_object($cmd)) {
-					if ($cmd->execCmd() !== $cmd->formatValue($state)) {
-						$cmd->setCollectDate('');
-						$cmd->event($state);
-					}
-				}
+				$state = ($state ===  '') ? 0 : $state;
+				$this->checkAndUpdateCmd('AI' . $relai,$state);
 			}
 		} else {
 			foreach ($wifipower['out'] as $relai => $state) {
-				if ($state == '') {
-					$state = 0;
-				}
+				$state = ($state ===  '') ? 0 : $state;
 				if (strpos($relai, 'FP') !== false) {
 					switch ($state) {
 						case 0:
@@ -278,13 +252,7 @@ class wifipower extends eqLogic {
 							break;
 					}
 				}
-				$cmd = $this->getCmd(null, $relai);
-				if (is_object($cmd)) {
-					if ($cmd->execCmd() !== $cmd->formatValue($state)) {
-						$cmd->setCollectDate('');
-						$cmd->event($state);
-					}
-				}
+				$this->checkAndUpdateCmd($relai,$state);
 			}
 		}
 
