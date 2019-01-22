@@ -254,7 +254,7 @@ class wifipower extends eqLogic {
 			} catch (Exception $e) {
 				return;
 			}
-			$xml = new SimpleXMLElement($request_http->exec(10, 2));
+			$xml = new SimpleXMLElement($request_http->exec(30, 5));
 		}
 		$wifipower = json_decode(json_encode($xml), true);
 		log::add('wifipower','debug',json_encode($wifipower));
