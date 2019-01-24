@@ -16,13 +16,12 @@
  * along with Jeedom. If not, see <http://www.gnu.org/licenses/>.
  */
 require_once dirname(__FILE__) . "/../../../../core/php/core.inc.php";
-
+log::add('wifipower', 'debug', 'Demande push recu de : ' . getClientIp());
 if (!jeedom::apiAccess(init('apikey'))) {
 	connection::failed();
 	echo 'Clef API non valide, vous n\'êtes pas autorisé à effectuer cette action';
 	die();
 }
-log::add('wifipower', 'debug', 'Demande push recu de : ' . getClientIp());
 $wifipower = wifipower::byLogicalId(getClientIp(), 'wifipower');
 
 if (!is_object($wifipower)) {
