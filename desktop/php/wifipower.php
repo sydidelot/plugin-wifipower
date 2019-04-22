@@ -156,7 +156,7 @@ foreach (wifipower::devicesParameters() as $id => $info) {
    </div>
    <center style="height : 255px;">
      <br/><br/><br/>
-     <img src="plugins/wifipower/doc/images/wifipower_icon.png" id="img_device" class="img-responsive" style="max-height : 250px;" />
+     <img src="plugins/wifipower/docs/images/wifipower_icon.png" id="img_device" class="img-responsive" style="max-height : 250px;" />
  </center>
 </div>
 </div>
