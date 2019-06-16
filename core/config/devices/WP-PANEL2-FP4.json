@@ -152,7 +152,15 @@
                 "isVisible": 1,
                 "logicalId": "F25"
             },
-             {
+            {
+                "name": "Etat 4",
+                "type": "info",
+                "subtype": "string",
+                "isVisible": 1,
+                "eventOnly": 1,
+                "logicalId": "FP3"
+            },
+            {
                 "name": "Arrêt 4",
                 "type": "action",
                 "subtype": "other",
@@ -193,14 +201,6 @@
                 "subtype": "other",
                 "isVisible": 1,
                 "logicalId": "F35"
-            },
-            {
-                "name": "Etat 4",
-                "type": "info",
-                "subtype": "string",
-                "isVisible": 1,
-                "eventOnly": 1,
-                "logicalId": "FP3"
             }
         ]
     }
