@@ -56,7 +56,7 @@
                 "name": "Etat 2",
                 "type": "info",
                 "subtype": "string",
-                "isVisible": 0,
+                "isVisible": 1,
                 "eventOnly": 1,
                 "logicalId": "FP1"
             },
