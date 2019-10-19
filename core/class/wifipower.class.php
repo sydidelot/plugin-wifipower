@@ -311,13 +311,16 @@ class wifipowerCmd extends cmd {
 		$eqLogic = $this->getEqLogic();
 		$url = $eqLogic->getUrl();
 		$url .= $this->getLogicalId();
-		$request_http = new com_http($url);
-		$result = $request_http->exec(10, 2);
-		try {
-			$xml_action = new SimpleXMLElement($result);
-			$eqLogic->updateState($xml_action);
-		} catch (Exception $e) {
-
+		/* Give a change to this stupid hardware to return a valid XML */
+		for ($try = 0; $try <= 10; $try++) {
+			$request_http = new com_http($url);
+			$result = $request_http->exec(10, 2);
+			try {
+				$xml_action = new SimpleXMLElement($result);
+				$eqLogic->updateState($xml_action);
+				break;
+			} catch (Exception $e) {
+			}
 		}
 	}
 
